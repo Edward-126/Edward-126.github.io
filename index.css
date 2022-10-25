@@ -77,10 +77,14 @@ body {
   background: #191919;
   overflow: hidden;
 }
-.intro .intro-text .hide span {
+.intro .intro-text .hide p {
   transform: translateY(100%);
   font-weight: 700;
   display: inline-block;
+}
+.intro .intro-text .hide span {
+  color: #FAD03C;
+  font-weight: 700;
 }
 .intro .intro-text .hide .text1 {
   color: #FACF3A;
@@ -575,6 +579,7 @@ nav .bx {
   /* ----------- T-126 ----------- */
   /* -------------------------------- Intro -------------------------------- */
   .intro {
+    padding: 10px 10%;
     background: #000;
     position: fixed;
     top: 0;
@@ -594,13 +599,14 @@ nav .bx {
     background: #000;
     overflow: hidden;
   }
-  .intro .intro-text .hide span {
+  .intro .intro-text .hide p {
     transform: translateY(100%);
     font-weight: 700;
     display: inline-block;
   }
-  .intro .intro-text .hide .text1 {
+  .intro .intro-text .hide span {
     color: #ff002f;
+    font-weight: 700;
   }
   /* -------------------------------- Intro -------------------------------- */
   /* -------------------------------- Header -------------------------------- */
@@ -626,7 +632,7 @@ nav .bx {
     flex-wrap: wrap;
   }
   #header nav i {
-    font-size: 27px;
+    font-size: 40px;
   }
   #header nav .bx {
     display: block;
@@ -654,7 +660,8 @@ nav .bx {
   }
   #header nav ul li a {
     color: #fff;
-    font-size: 18px;
+    font-size: 25px;
+    line-height: 40px;
     position: relative;
   }
   #header nav ul li a:after {
@@ -681,7 +688,7 @@ nav .bx {
   }
   #header .text-box h1 {
     line-height: 50px;
-    font-size: 39px;
+    font-size: 45px;
     font-weight: 700;
   }
   #header .text-box h1 span {
@@ -689,14 +696,14 @@ nav .bx {
     color: #ff002f;
   }
   #header .text-box p {
-    font-size: 12px;
+    font-size: 15px;
     line-height: 20px;
   }
   #header .text-box i {
     color: #ababab;
     line-height: 50px;
     letter-spacing: 8px;
-    font-size: 20px;
+    font-size: 28px;
   }
   #header .text-box i:hover {
     color: #ff002f;
@@ -715,6 +722,16 @@ nav .bx {
   #about .row .about-col-1 {
     flex-basis: 100%;
     margin-bottom: 30px;
+  }
+  #about .row .about-col-1 img {
+    width: 100%;
+    border: 4px solid transparent;
+    border-radius: 15px;
+    transition: 0.5s;
+  }
+  #about .row .about-col-1 img:hover {
+    border: 4px solid #aa0d2a;
+    transform: scale(1.04);
   }
   #about .row .about-col-2 {
     font-size: 14px;
@@ -744,10 +761,11 @@ nav .bx {
     width: 50%;
   }
   #about .row .about-col-2 .tab-contents ul li {
+    font-size: 15px;
     margin: 10px 0;
   }
   #about .row .about-col-2 .tab-contents ul li i {
-    font-size: 14px;
+    font-size: 11px;
   }
   #about .row .about-col-2 .tab-contents ul li span {
     color: #ff002f;
@@ -982,10 +1000,10 @@ nav .bx {
   }
   #footer .footer_content h3 {
     font-family: "Covered By Your Grace", serif;
-    font-size: 50px;
-    font-weight: 400;
+    font-size: 70px;
+    font-weight: 300;
     text-transform: capitalize;
-    line-height: 60px;
+    line-height: 70px;
   }
   #footer .footer_content h3 span {
     font-family: "Covered By Your Grace", serif;
@@ -995,7 +1013,7 @@ nav .bx {
     max-width: 250px;
     margin: 10px auto;
     line-height: 28px;
-    font-size: 14px;
+    font-size: 16px;
     text-transform: capitalize;
   }
   #footer .footer_content .socials {
